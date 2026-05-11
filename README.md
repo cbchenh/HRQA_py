@@ -172,19 +172,18 @@ reference `q_b` used in Eq. 17.
 
 | MATLAB                                 | Python                                  |
 |----------------------------------------|-----------------------------------------|
-| `IFS-9.m`                              | `hrqa.ifs.ifs_address`                  |
-| `HAS-5.m` + `combn.m` + `SymbG-18.m`   | `hrqa.segmentation.HASSegmenter`        |
+| `IFS.m`                              | `hrqa.ifs.ifs_address`                  |
+| `HAS.m` + `combn.m` + `SymbG.m`   | `hrqa.segmentation.HASSegmenter`        |
 | (KMeans not in MATLAB pkg)             | `hrqa.segmentation.KMeansSegmenter`     |
-| `HRQA-7.m` / `HRQA2-8.m` / `RHRQA-13.m`| `hrqa.hrqa_core.rhrqa`                  |
-| `FHRQA-4.m`                            | `hrqa.hrqa_core.fhrqa`                  |
+| `HRQA.m` / `HRQA2.m` / `RHRQA.m`| `hrqa.hrqa_core.rhrqa`                  |
+| `FHRQA.m`                            | `hrqa.hrqa_core.fhrqa`                  |
 | `optimLabel-11.m` (incomplete)         | `hrqa.label_opt.optimal_label_order`    |
-| `q_learning_label_assignment-28.m` + `compute_points-24.m` + `compute_reward-25.m` | `hrqa.label_opt._q_learning_search` |
-| `demo-2.m`                             | `demos/demo_signal.py`                  |
-| `demo_c-3.m`                           | `demos/demo_sequence.py`                |
-| `demo-26.m`                            | `demos/demo_label_opt.py`               |
-| `HRP-6.m`, `RP-16.m`, `PlotCell-12.m`  | `hrqa.plotting`                         |
-| `lorenz-10.m`                          | (use `scipy.integrate.solve_ivp` directly if needed) |
-| `RHRQA_old*.m`, `untitled-21.m`, `TrappingShiftingFigs-20.m`, `sumdist-17.m` | (legacy / scratch — not ported) |
+| `q_learning_label_assignment.m` + `compute_points-24.m` + `compute_reward-25.m` | `hrqa.label_opt._q_learning_search` |
+| `demo.m`                             | `demos/demo_signal.py`                  |
+| `demo_c.m`                           | `demos/demo_sequence.py`                |
+| `demo-2.m`                            | `demos/demo_label_opt.py`               |
+| `HRP.m`, `RP.m`, `PlotCell.m`  | `hrqa.plotting`                         |
+| `lorenz.m`                          | (use `scipy.integrate.solve_ivp` directly if needed) |
 
 ## Speed notes — what makes it fast
 

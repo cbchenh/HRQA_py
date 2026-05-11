@@ -1,0 +1,22 @@
+HRQA Python — Quickstart
+========================
+
+After unzipping, open a terminal in the hrqa_py folder and run:
+
+    bash RUN_ME.sh
+
+That's it. The script will:
+  1. Create a venv (.venv) if one doesn't exist
+  2. Install all dependencies + the hrqa package
+  3. Run the Lorenz demo
+  4. Run the test suite
+
+If you just want to run the demo (assuming dependencies are already installed):
+
+    python demos/demo_signal.py
+
+If you have a custom CSV:
+
+    python demos/demo_signal.py /path/to/your.csv
+
+All demo CSVs are bundled inside demos/ so nothing else needs to be downloaded.

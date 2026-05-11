@@ -1,0 +1,20 @@
+name: hrqa
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.22
+  - scipy>=1.9
+  - scikit-learn>=1.1
+  - numba>=0.56
+  - joblib>=1.2
+  - pandas>=1.5
+  - matplotlib>=3.5
+  - pytest>=7
+  - pip
+  - pip:
+      - line_profiler
+      # Uncomment ONE of the following to enable opt-in GPU acceleration
+      # (must match your installed CUDA toolkit version):
+      # - cupy-cuda12x>=12.0
+      # - cupy-cuda11x>=11.0

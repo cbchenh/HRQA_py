@@ -20,3 +20,28 @@ If you have a custom CSV:
     python demos/demo_signal.py /path/to/your.csv
 
 All demo CSVs are bundled inside demos/ so nothing else needs to be downloaded.
+
+=========================
+Windows Anaconda
+
+Step 1. 
+cd path\to\your\unzipped\hrqa_py
+
+Step 2. 
+conda create -n hrqa_env python=3.10  
+
+Step 3. 
+conda activate hrqa_env
+
+Step 4. 
+pip install -e .
+
+Step 5.
+pip install -r requirements.txt
+
+Step 6.
+python demos\demo_signal.py
+
+
+python demos\demo_signal.py path\to\your.csv
+

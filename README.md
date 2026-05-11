@@ -108,7 +108,7 @@ hrqa_from_sequence(
 
 ### Sliding-window batch (`rhrqa_windowed`)
 
-Mirrors `demo_c-3.m`. Slides `win_size` windows with `step_size` stride and
+Mirrors `demo_c.m`. Slides `win_size` windows with `step_size` stride and
 returns one feature vector per window.
 
 ```python
@@ -197,7 +197,7 @@ reference `q_b` used in Eq. 17.
    that dominated pure-NumPy time.
 4. **`Cv` reuse** — pass a pre-computed IFS address into `rhrqa(...)` once
    per long sequence and reuse it across windows or orders (matches
-   `HRQA2-8.m`).
+   `HRQA2.m`).
 5. **Optional GPU** — `hrqa.gpu.rhrqa_windowed_gpu` for batches large enough
    to amortize transfer + launch overhead (heuristic threshold ~200k points).
 
